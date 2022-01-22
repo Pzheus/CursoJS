@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CUSTOMS</title>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+
+    <input type="text" id='pais' name="pais">
+
+    <button type="button" onclick="verificar()" >Checar</button>
+
+    <div id='res'></div>
+
+
+    <script>
+
+        function verificar(){
+
+            var r = document.getElementById('res')
+
+
+        console.log(pais.value) // O ".value" PODE SER USAR PARA PEGAR  O VALOR DE UM INPUT SEM CHAMAR POR ID, E SEM UTILIZAR VARIAVEL
+    
+
+        if (pais.value == `b`)
+        {
+             r.innerHTML += `<p> Você é do Brasil, seja bem-vindo</p>`
+
+        }
+        
+        else
+        {
+
+             r.innerHTML += `<p> Você é de outro lugar, cai fora!</p`
+
+            
+        }
+
+    }
+    </script>
+</body>
+</html>
